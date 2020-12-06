@@ -12,3 +12,23 @@ DNS 为域名解析 使得访问域名能找到ip地址
 HTTP协议默认端口为80 HTTPS协议默认端口为443
 
 TCP协协议规定了字节发送与解析的规范
+
+## response 常用方法
+
+getHeaderNames() 获取响应头信息 K,V
+
+/**
+@param {String} HeaderName 响应头KEY
+@return 信息
+*/
+getHeader(HeaderName) 获取指定响应头信息  
+
+
+## request 常用方法与属性
+
+属性
+Referer 存放请求来源于哪个网站 得到 IP地址 || 域名
+
+content-Typpe 获取响应类型
+
+
