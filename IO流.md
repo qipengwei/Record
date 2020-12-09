@@ -54,4 +54,9 @@ File 文件类
    File sub = new File(Home,文件目录名)
 ```
 
+## NIO 
+可并发读写 可将文件写入缓冲区提高效率
 
+BufferedReader 一次性读指定字节到缓冲区
+BufferedWriter 一次性写指定字节到缓冲区
+以上两种流都是在内存中创建 一次性读写
