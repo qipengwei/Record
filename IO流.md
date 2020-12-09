@@ -22,5 +22,36 @@
 ```
 
 基本写入硬盘
+```java
+public static void FileWrite() {
+     OutputStream OS = new FileOutputStream("文件路径");
+     
+     OS.write(字节);
+}
+```
+
+File 文件类
+
+```java
+   File file = new File(文件路径);
+   //判断实例指向地址是否是一个文件
+   file.isFile() 
+   //判断实例指向地址是否是一个文件夹
+   file.isDirectory()
+   //判断实例指向地址是否存在
+   file.exists() 
+   //获取实例指向地址的绝对路径
+   file.getAbsolutePath()
+   //获取实例指向地址下文件名
+   file.lastFiles()
+   //获取实例指向地址下文件名
+   file.list()
+   //判断当前实例指向地址是否是绝对路径
+   file.isAbsolute()
+   
+   //拿到文件指定子目录
+   File Home = new File(文件路径);
+   File sub = new File(Home,文件目录名)
+```
 
 
