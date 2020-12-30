@@ -12,10 +12,13 @@
 当 静态或实例 方法满足函数式接口输入与输出时  可使用特殊语法 类名::方法签名  传入由函数式接口定义的参数中自动转换为函数表达式 这种方式被称为方法引用
 函数表达式原则  表达式超过一行的  则使用方法引用提高可读性 反之则使用lambda表达式
 
-JDK interface:  
+```java
+   JDK interface:  
+
       Predicate<Class>  抽象test方法 返回布尔值 方法是判断条件功能
 
       Consumer<Class> 抽象 accept方法 返回void 方法是消费对象功能
       
       Supplier<Class> 抽象 get方法 返回一个创建的对象 方法是创建对象功能
+```
      
